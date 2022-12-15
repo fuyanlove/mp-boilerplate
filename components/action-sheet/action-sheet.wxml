@@ -1,0 +1,8 @@
+<!-- 遮罩 -->
+<view class="sheetContianer" wx:if="{{showMask}}" catchtap="onHideMask"></view>
+<!-- 面板 -->
+<view class="content" style="bottom: {{showMask? '0': -contentHeight+'px'}}; visibility:{{showMask? 'unset': 'hidden'}}">
+    <view class="title" wx:if="{{title}}">{{title}}</view>
+    <slot name="title"></slot>
+    <view class="info"><slot></slot></view>
+</view>

@@ -1,0 +1,7 @@
+project.private.config.json
+.todo
+node_modules
+miniprogram_npm
+.DS_Store
+.cloudbase
+.vscode

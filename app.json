@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/error/error",
+        "pages/webview/webview"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+        "navigationBarTextStyle": "@navigationBarTextStyle",
+        "navigationBarTitleText": "Miniprogram"
+    },
+    "tabBar": {
+        "backgroundColor":"@tabBackgroundColor",
+        "color":"@tabColor",
+        "borderStyle":"@tabBorderStyle",
+        "selectedColor": "#1d6ac6",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "导航",
+                "iconPath": "@tabImageApp",
+                "selectedIconPath": "static/images/nav/application-active.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "resizable": true,
+    "darkmode": false,
+    "themeLocation":"theme.json"
+}

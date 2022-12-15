@@ -1,0 +1,48 @@
+.sheetContianer {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	bottom: 0;
+	z-index: 98;
+}
+
+.content {
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	max-height: 80%;
+	bottom: -200px;
+	z-index: 99;
+	transition: all 0.2s;
+	border-radius: 10px 10px 0 0;
+	box-sizing: border-box;
+	.title {
+		text-align: center;
+		font-size: 32rpx;
+		font-weight: 600;
+		padding: 24rpx 0;
+		letter-spacing: 6rpx;
+		border-bottom: 1px solid #eee;
+		color: #000;
+	}
+
+	.info {
+		-webkit-overflow-scrolling: touch;
+		overflow: auto;
+		margin: 24rpx;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+    .content{
+        background-color:rgb(17, 17, 17);
+
+        .title{
+            color:#eee;
+            border-bottom:1px solid #222;
+        }
+    }
+}
